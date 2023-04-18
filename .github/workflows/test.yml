@@ -1,0 +1,18 @@
+name: Test action
+on:
+  workflow_dispatch:
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1
+        run: echo "print step 1"
+      - name: Step2
+        run: echo "print step 2"
+  print2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1
+        run: echo "print 2 step 1"
+      - name: Step2
+        run: echo "print 2 step2 "
